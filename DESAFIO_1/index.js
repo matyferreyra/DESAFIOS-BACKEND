@@ -4,7 +4,7 @@ class ProductManager {
     }
 
     addProduct (title, description, price, thumbnail, code, stock) {
-        if (!title || !description || !price || !thumbnail ||!code ||code || !stock){
+        if (!title || !description || !price || !thumbnail ||!code || !stock){
             console.warn("Todos los campos son obligatorios. Completarlos para poder avanzar");
             return;
         }
@@ -49,4 +49,4 @@ const productManager = new ProductManager();
 productManager.addProduct("Fernet", "Bebida espirituosa", 1800, "thumbnail1.jpg", "3", 9);
 productManager.addProduct("Ron", "bebida de los piratas", 2150, "thumbnail2.jpg", "2", 7);
 productManager.addProduct("Vodka", "bebida de los soldados rusos", 1500, "thumbnail3.jpg", "1", 11);
-console.log(productManager.products());
+console.log(ProductManager.products());
